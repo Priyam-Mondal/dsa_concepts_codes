@@ -32,7 +32,7 @@ public class HeapifyAlgoDriver {
         }
     } 
     public static void main(String[] args){
-        int[] arr={50,55,53,54,52};
+        int[] arr={54,53,55,52,50};
         int n=arr.length;
 
         for(int i=n/2-1; i>=0; i--){

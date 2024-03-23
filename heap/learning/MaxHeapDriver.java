@@ -35,6 +35,7 @@ class MaxHeap{
             i = parent(i);
         }
     }
+    //main code for heapify algo
     void heapifyDown(int i) {
         while (i < this.size) {
             int left = leftChild(i);
@@ -111,6 +112,8 @@ public class MaxHeapDriver{
         System.out.println("Max: "+mh.getMax());
         System.out.println("Max: "+mh.getMax());
         System.out.println("Max: "+mh.getMax());
+
+        int[] arr={50,55,53,54,52,10,87};
 
     }
 }
