@@ -34,7 +34,10 @@ public class HeapifyAlgoDriver {
     public static void main(String[] args){
         int[] arr={54,53,55,52,50};
         int n=arr.length;
-
+        
+        //running loop from n/2 because leaf nodes stored from n/2 to n
+        //dont need to check for leaf nodes as there are no child of leaf nodes-
+        //  to compare with
         for(int i=n/2-1; i>=0; i--){
             heapify(arr,n,i);
         }
