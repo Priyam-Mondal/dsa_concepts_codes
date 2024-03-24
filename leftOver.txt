@@ -14,7 +14,7 @@ graphs
 
 string - hard
 
-sliding window,two pointer
+sliding window,two pointer - medium, hard
 
 stack queue - medium, hard
 
