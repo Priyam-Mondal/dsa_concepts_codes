@@ -1,1 +1,28 @@
 heap - hard
+
+bt - hard
+
+bst
+
+trie
+
+greedy
+
+dp
+
+graphs
+
+string - hard
+
+sliding window,two pointer
+
+stack queue - medium, hard
+
+bit manipulation
+
+recursion - hard
+
+binary search - hard, on 2d array
+
+
+array - medium, hard
