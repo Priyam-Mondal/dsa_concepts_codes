@@ -3,9 +3,9 @@ class Solution {
         HashMap<Integer,Integer> m = new HashMap<>();
 
         for(int i=0; i<nums.length; i++){
-            int complement = target-nums[i];
-            if(m.containsKey(target-nums[i])){
-                return new int[]{m.get(complement),i};
+            int rem = target-nums[i];
+            if(m.containsKey(rem)){
+                return new int[]{m.get(rem),i};
             }
             m.put(nums[i],i);
         }

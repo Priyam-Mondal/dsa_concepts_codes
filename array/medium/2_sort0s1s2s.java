@@ -15,7 +15,7 @@ public class Solution {
                 // Keeping 1 in the middle
                 mid++;
             } else {
-                // Placing 0 at the end of the array
+                // Placing 2 at the end of the array
                 int temp = nums[mid];
                 nums[mid] = nums[high];
                 nums[high] = temp;

@@ -6,14 +6,14 @@ class TUF{
         while (i < n && j < m) {
             if (arr1[i] <= arr2[j]) // Case 1 and 2
             {
-            if (Union.size() == 0 || Union.get(Union.size()-1) != arr1[i])
-                Union.add(arr1[i]);
-            i++;
+                if (Union.size() == 0 || Union.get(Union.size()-1) != arr1[i])
+                    Union.add(arr1[i]);
+                i++;
             } else // case 3
             {
-            if (Union.size() == 0 || Union.get(Union.size()-1) != arr2[j])
-                Union.add(arr2[j]);
-            j++;
+                if (Union.size() == 0 || Union.get(Union.size()-1) != arr2[j])
+                    Union.add(arr2[j]);
+                j++;
             }
         }
         while (i < n) // IF any element left in arr1

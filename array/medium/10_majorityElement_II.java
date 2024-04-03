@@ -25,7 +25,7 @@ Explanation:
  */
 
 
-
+//an array can not has more than 2 majority (n/3) elements
 
 
  class Solution {

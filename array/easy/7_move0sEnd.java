@@ -14,7 +14,7 @@ public class Solution {
             return a;
         }
 
-        // swap a[i] with a[j] if a[i]!=0
+        // swap a[i] with a[firstZeroIndex] if a[i]!=0
         for(int i=firstZeroIndex+1; i<n; i++){
             if(a[i]!=0){
                 int t=a[i];
