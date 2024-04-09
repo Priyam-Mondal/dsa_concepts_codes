@@ -40,21 +40,15 @@ public class HeapSort {
     }
 
     static void heapSort(int[] arr){
-        int size=arr.length-1;
+        int n=arr.length;
 
-        while(size>1){
-            //step 1: swap first and last element
-            swap(arr, 0, size);
-
-            //step 2: decrement size by 1
-            size--;
-
-            //step 3: heapify subpart from 0 to size
-            heapify(arr, size, 0);
+        for(int i=n-1; i>=0; i--){
+            swap(arr,i,0);
+            heapify(arr,i,0);
         }
     }
     public static void main(String[] args) {
-        int[] arr={54,53,55,52,50};
+        int[] arr={5, 7, 2, 3, 5, 5};
         int n=arr.length;
 
         //heap creation

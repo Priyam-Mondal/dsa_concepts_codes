@@ -1,18 +1,27 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+/*
+Example 1:
+Input:Binary Tree: 1 2 3 4 5 -1 6
+				
+
+Output: [[1],[3, 2],[4, 5, 6]]
+Explanation: 
+Level 1 (Root): Visit the root node 1 from left to right. Zigzag Traversal: [1]
+Level 2: Visit nodes at this level in a right-to-left order. Zigzag Traversal:  [1], [3, 2]
+Level 3: Visit nodes at this level in a left-to-right order. Zigzag Traversal:  [1], [3, 2], [4, 5, 6]
+
+Example 2:
+Input:Binary Tree: 1 2 -1 4 5 -1 -1 7 8
+				
+
+Output : [[1], [2], [4, 5], [8, 7]]
+Explanation: 
+Level 1 (Root): Visit the root node 1 from left to right. Zigzag Traversal: [1]
+Level 2: Visit nodes at this level in a right-to-left order. Zigzag Traversal:  [1], [2]
+Level 3: Visit nodes at this level in a left-to-right order. Zigzag Traversal:  [1], [3, 2], [4, 5]
+Level 4: Visit nodes at this level in a right-to-left order. Zigzag Traversal:  [1], [3, 2], [4, 5], [8, 7]
  */
+
+ 
 import java.util.*;
 
 class Solution {
