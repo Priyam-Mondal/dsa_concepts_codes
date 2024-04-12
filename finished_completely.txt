@@ -1,2 +1,5 @@
 array
 linked list
+BT
+BST
+Greedy
