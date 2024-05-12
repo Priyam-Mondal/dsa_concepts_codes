@@ -22,11 +22,15 @@ class Solution {
             }
         }
 
-        // After the loop, if the count is greater than 0, it means the current majority element candidate is indeed the majority element
-        if (cnt > 0) {
-            return posElement;
+        cnt=0;
+        for(int i=0; i<a.length;i++){
+            if(posEle==a[i]){
+                cnt++;
+            }
         }
-        // If the count is not greater than 0, it means there is no majority element in the array
+        if(cnt>size/2){
+            return posEle;
+        }
         return -1;
     }
 }
