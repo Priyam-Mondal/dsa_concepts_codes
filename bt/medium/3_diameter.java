@@ -23,8 +23,8 @@ class Solution {
         int lh = height(root.left, diameter);
         int rh = height(root.right, diameter);
 
-        // Update the diameter if the sum of left and right subtree heights exceeds the current diameter.
-        diameter[0] = Math.max(diameter[0], lh + rh);
+        // Update the diameter if the sum of left and right subtree + 1(for root) heights exceeds the current diameter.
+        diameter[0] = Math.max(diameter[0], lh + rh+1);
 
         // Return the height of the current node.
         return 1 + Math.max(lh, rh);
