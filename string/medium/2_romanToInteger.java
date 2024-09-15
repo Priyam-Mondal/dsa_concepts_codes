@@ -19,8 +19,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4. */
 // if cur>next: subtract cur from ans
 // else add to ans
 
-
-class Solution {
+class 2_romanToInteger {
     
     public int romanToInt(String s) {
         Map<Character, Integer> map = Map.of(
@@ -33,7 +32,9 @@ class Solution {
             'M', 1000);
 
         int ans=0;
-        for(int i=0; i<s.length()-1; i++){
+        int n=s.length();
+
+        for(int i=0; i<n-1; i++){
             int cur=map.get(s.charAt(i));
             int next=map.get(s.charAt(i+1));
             if(cur<next){
@@ -42,7 +43,7 @@ class Solution {
                 ans+=cur;
             }
         }
-        ans+=map.get(s.charAt(s.length()-1));
+        ans+=map.get(s.charAt(n-1));
         return ans;
     }
 } 
