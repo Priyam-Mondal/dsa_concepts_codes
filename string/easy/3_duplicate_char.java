@@ -11,24 +11,7 @@ character that is duplicated and has frequency 2.
  */
 
 
-
-import java.util.* ;
-import java.io.*; 
-import java.util.*;
-/****
- * Following is the java Pair class
- * class Pair{
-    char alphabet;
-    int count;
-    Pair(char ch, int x){
-        this.alphabet = ch;
-        this.count = x;
-    }
-}
- */
-
-
-public class Solution {
+public class 3_duplicate_char {
 
     public static ArrayList<Pair> duplicate_char(String s, int n) {
         

@@ -22,7 +22,7 @@
 public static int isCyclicRotation(String p, String q) {
     // Check if lengths of strings p and q are different
     if (p.length() != q.length()) {
-        return 0; // Return 0 if lengths are different (they cannot be cyclic rotations of each other)
+        return 0; //Return 0 if lengths are different (they cannot be cyclic rotations of each other)
     }
 
     // Concatenate q with itself

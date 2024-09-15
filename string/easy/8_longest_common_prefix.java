@@ -27,22 +27,17 @@ In the given testcase, the longest prefix that is present in all the strings is 
 // TC : O(nlog(n))
 
 
-import java.util.Arrays;
-public class Solution {
-    public static String commonPrefix(String []arr,int n){
-        StringBuffer ans = new StringBuffer();
-
-        Arrays.sort(arr);
-
-        for(int i=0; i<arr[0].length(); i++){
-            if(arr[0].charAt(i)==arr[n-1].charAt(i)){
-                ans.append(arr[0].charAt(i));
-            }else{
-                break;
+class Solution {
+    public String longestCommonPrefix(String[] v) {
+        StringBuilder ans = new StringBuilder();
+        Arrays.sort(v);
+        String first = v[0];
+        String last = v[v.length-1];
+        for (int i=0; i<Math.min(first.length(), last.length()); i++) {
+            if (first.charAt(i) != last.charAt(i)) {
+                return ans.toString();
             }
-        }
-        if(ans.length()==0){
-            return "-1";
+            ans.append(first.charAt(i));
         }
         return ans.toString();
     }
